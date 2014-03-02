@@ -1,4 +1,3 @@
-/* -- Mixins -- */
 article,
 aside,
 details,
@@ -345,16 +344,3 @@ table {
 td,
 th {
   padding: 0; }
-
-/*FONTS*/
-/*COLOR*/
-body {
-  font-family: Arial, sans-serif; }
-
-a {
-  text-decoration: none;
-  color: #fff; }
-
-a:hover {
-  text-decoration: underline;
-  color: #0093cc; }

@@ -1,16 +1,18 @@
 @import 'mixins';
 @import 'normalize';
 
-$largest-breakpoint : 1007px;
-$medium-breakpoint : 1280px;
+$large-width : 1200px;
+$medium-width : 980px;
 
 /*FONTS*/
-$primary-font : Helvetica, Arial, sans-serif;
+$primary-font : Open Sans, Arial, sans-serif;
 $secondary-font : Arial, sans-serif;
 
 /*COLOR*/
-$blue : #0093cc;
-$gray: #444;
+$blue : #0087c9;
+$gray: #dc4e23;
+$dark-grey: #222222;
+$med-grey: #666666;
 
 
 body{ 
@@ -26,26 +28,6 @@ a:hover{
 }
 
 
-
-
-/* -- Navigation components -- */
-@import 'navigation';
-
-
-/* -- Layout Components -- */
-@import 'layout';
-
-
-/* -- Popular videos section -- */
-@import 'popular-videos';
-
-
-/* -- Upcoming section -- */
-@import 'upcoming';
-
-
-/* -- Footer -- */
-@import 'footer';
 
 
 

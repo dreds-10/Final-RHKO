@@ -86,11 +86,32 @@ span.bold{font-weight:bold;}
 .proj-img{
 	height:250px;
 	width:368px;
-	background:red;
+	background:$dark-grey;
 	float:left;
 	overflow:hidden;
+	position:relative;
 	
-	img{width:100%;	}
+	
+	img{height:100%;	}
+	.mask{
+		width:100%;
+		height:100%;
+		background-color:rgba(220,78,35,0.9);
+		position:absolute;
+		top:100%;
+		@include transition;
+		
+		color:#fff;
+		text-align:center;
+		line-height:400px;
+		background-image:url(../img/mask.png);
+		background-repeat:no-repeat;
+		background-position:center;
+	}
+	
+	&:hover .mask{
+		top:0;
+	}
 }
 
 .proj-description{
@@ -106,12 +127,12 @@ span.bold{font-weight:bold;}
 	}
 	
 	p{
-		font-size:14px;
+		font-size:13px;
 		margin-bottom:15px;
 	}
 	
 	.tag{
-		padding:3px 15px;
+		padding:2px 12px;
 		border:1px solid $orange;
 		font-size:12px;
 		

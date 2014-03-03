@@ -154,6 +154,32 @@ span.bold{font-weight:bold;}
 
 
 
+
+
+
+
+/****************
+SECTION 4
+***************/
+#map-container{
+	width:100%;
+	height:400px;	
+}
+
+#map-canvas{
+	width:100%;	
+	height:100%;
+	
+}
+
+
+
+
+
+
+
+
+
 /*******************************
 REPONSIVE DESIGN
 *********************************/
@@ -234,10 +260,10 @@ REPONSIVE DESIGN
 				float:none;
 				width:100%;
 				text-align:center;
-				padding:20px 0;
+				padding:16px 0;
 				border-top: 1px solid #333;
 			   }
-			 li.active, li:hover{
+			 li.active, li:hover, li:active{
 				padding:16px 0;
 				border-bottom:none;
 				background:$orange;
@@ -246,13 +272,22 @@ REPONSIVE DESIGN
 		   }
 	   }
 	}
-	
-	
-	
-	
 
 }
 
+
+
+
+
+
+@media screen and (max-width: 450px){
+
+.intro .intro-wrap #about span.huge{
+		font-size:42px;
+	}
+
+
+}
 
 
 

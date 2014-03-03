@@ -12,21 +12,22 @@ $(document).ready(function() { //when dom is ready
   		return false;
 	 });
 	 
-	 if (matchMedia('media screen and (max-width: 700px)').matches) {
-	 	$('#description').prependTo('#about');	 
-	 }
 	 
 	 
+	 
+	 var div = $(".sec-img");
 	 //change the html structure when the window size is equal or smaller than 700px
 	 $(window).resize(function() {
         // This will fire each time the window is resized:
-        if($(window).width() <= 700) {
-            $('#description').prependTo('#about');
+        if($(window).width() <= 800) {            
+        	div.addClass("img-lower");	
         } else {
             // if smaller
-            $('#contact').prependTo('#about');
+            div.removeClass("img-lower");
         }
     }).resize();
+	
+	
 	
 	
 	

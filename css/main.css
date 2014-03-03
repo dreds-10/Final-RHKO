@@ -545,6 +545,32 @@ span.bold {
       color: #fff;
       cursor: pointer; }
 
+.img-lower {
+  width: 100%;
+  height: 147px;
+  background: url(../img/lowbar.jpg); }
+
+/*******************************
+REPONSIVE DESIGN
+*********************************/
+@media screen and (max-width: 800px) {
+  .sec1 {
+    height: auto; }
+
+  .img-side {
+    width: 0;
+    height: 0;
+    display: none; }
+
+  .intro {
+    width: 90%;
+    padding: 50px 5%; }
+
+  .intro .intro-wrap #about div:first-child p {
+    font-size: 18px; }
+
+  .intro .intro-wrap #about span.huge {
+    font-size: 56px; } }
 .slideInDown {
   -moz-animation: slideInDown 0.5s cubic-bezier(0, 0.76, 0.13, 1);
   -webkit-animation: slideInDown 0.5s cubic-bezier(0, 0.76, 0.13, 1);

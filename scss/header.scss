@@ -29,3 +29,26 @@
 		}
 	}
 }
+
+.toggle-menu{
+	width:60px;
+	margin: 0 auto;
+	height:55px;
+	display:none;
+	background-image:url(../img/toggle.png);
+	background-position:center bottom;
+	cursor:pointer;
+	
+	@include transition;
+}
+
+.toggle-active{
+	background-position:center top;
+}
+
+
+
+.main-nav.active{
+	display:block;
+	width:100%;
+}

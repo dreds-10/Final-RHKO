@@ -28,6 +28,10 @@ $(document).ready(function() { //when dom is ready
     }).resize();
 	
 	
+	$(".toggle-menu").click(function(){
+		$(this).toggleClass("toggle-active");	
+	});
+	
 	
 	
 	

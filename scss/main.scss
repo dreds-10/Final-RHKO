@@ -54,7 +54,6 @@ span.bold{font-weight:bold;}
 	width:96%;
 	padding: 50px 2%;
 	margin: 0 auto;
-	border:1px solid red;
 }	
 .sec-head{
 	text-align:center;
@@ -160,27 +159,94 @@ REPONSIVE DESIGN
 *********************************/
 @media screen and (max-width: 800px) {
 
-.sec1{
-	height:auto;
+	.sec1{
+		height:auto;
+	}
+	.img-side{width:0; height:0; display:none;}
+	.intro{
+		width:90%;
+		padding: 50px 5%;
+	}
+	
+	.intro .intro-wrap #about div:first-child p{
+		font-size:18px;
+	}
+	
+	.intro .intro-wrap #about span.huge{
+		font-size:56px;
+	}
+
 }
-.img-side{width:0; height:0; display:none;}
-.intro{
-	width:90%;
-	padding: 50px 5%;
+
+
+
+
+@media screen and (max-width: 650px){
+
+	.arrow{display:none;}
+	
+	.project-wrap{
+		height:auto;
+	}
+	
+	.proj-description{
+		width:92%;
+		height:auto;
+		margin-left:0;
+		padding:4%;
+	}
+	.proj-img {
+		height:auto;
+		width:100%;
+		background:none;
+		float:none;
+		img{
+			width:100%;
+		}
+		.mask{
+			line-height:330px;
+		}
+	}
+
+	
+	.wrapper{
+		padding:50px 5%;
+		width:90%;
+	}
+	
+	.toggle-menu{
+		display:block;
+	}
+	
+	.header{
+		min-height:55px;
+		.main-nav{
+		
+		overflow:hidden;
+		width:100%;
+		
+		ul{
+			li{
+				float:none;
+				width:100%;
+				text-align:center;
+				padding:20px 0;
+				border-bottom:$dark-grey;
+			   }
+			 li.active, li:hover{
+				padding:16px 0;
+				border-bottom:none;
+				background:$orange;
+			}  
+		   }
+	   }
+	}
+	
+	
+	
+	
+
 }
-
-.intro .intro-wrap #about div:first-child p{
-	font-size:18px;
-}
-
-.intro .intro-wrap #about span.huge{
-	font-size:56px;
-}
-
-}
-
-
-
 
 
 
@@ -195,10 +261,10 @@ REPONSIVE DESIGN
 
 
 .slideInDown{
-	-moz-animation:slideInDown 0.5s cubic-bezier(0,.76,.13,1);
-	-webkit-animation:slideInDown 0.5s cubic-bezier(0,.76,.13,1);
-	animation:slideInDown 0.5s cubic-bezier(0,.76,.13,1);
-	o-animation:slideInDown 0.5s cubic-bezier(0,.76,.13,1);
+	-moz-animation:slideInDown 0.7s cubic-bezier(0,.76,.13,1);
+	-webkit-animation:slideInDown 0.7s cubic-bezier(0,.76,.13,1);
+	animation:slideInDown 0.7s cubic-bezier(0,.76,.13,1);
+	o-animation:slideInDown 0.7s cubic-bezier(0,.76,.13,1);
 }	
 
 @-webkit-keyframes slideInDown {
@@ -237,10 +303,10 @@ REPONSIVE DESIGN
 
 /*SLIDE UP*/
 .slideInUp{
-	-moz-animation:slideInUp 0.5s cubic-bezier(0,.76,.13,1);
-	-webkit-animation:slideInUp 0.5s cubic-bezier(0,.76,.13,1);
-	animation:slideInUp 0.5s cubic-bezier(0,.76,.13,1);
-	o-animation:slideInUp 0.5s cubic-bezier(0,.76,.13,1);
+	-moz-animation:slideInUp 0.7s cubic-bezier(0,.76,.13,1);
+	-webkit-animation:slideInUp 0.7s cubic-bezier(0,.76,.13,1);
+	animation:slideInUp 0.7s cubic-bezier(0,.76,.13,1);
+	o-animation:slideInUp 0.7s cubic-bezier(0,.76,.13,1);
 }	
 
 @-webkit-keyframes slideInUp {

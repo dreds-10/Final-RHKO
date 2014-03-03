@@ -392,6 +392,24 @@ span.bold {
       color: #fff;
       font-weight: bold; }
 
+.toggle-menu {
+  width: 60px;
+  margin: 0 auto;
+  height: 55px;
+  display: none;
+  background-image: url(../img/toggle.png);
+  background-position: center bottom;
+  cursor: pointer;
+  -webkit-transition: all 0.5s cubic-bezier(0, 0.76, 0.13, 1);
+  -moz-transition: all 0.5s cubic-bezier(0, 0.76, 0.13, 1); }
+
+.toggle-active {
+  background-position: center top; }
+
+.main-nav.active {
+  display: block;
+  width: 100%; }
+
 /*CONTENT*/
 .sec {
   width: 100%;
@@ -474,8 +492,7 @@ span.bold {
   max-width: 980px;
   width: 96%;
   padding: 50px 2%;
-  margin: 0 auto;
-  border: 1px solid red; }
+  margin: 0 auto; }
 
 .sec-head {
   text-align: center;
@@ -571,11 +588,56 @@ REPONSIVE DESIGN
 
   .intro .intro-wrap #about span.huge {
     font-size: 56px; } }
+@media screen and (max-width: 650px) {
+  .arrow {
+    display: none; }
+
+  .project-wrap {
+    height: auto; }
+
+  .proj-description {
+    width: 92%;
+    height: auto;
+    margin-left: 0;
+    padding: 4%; }
+
+  .proj-img {
+    height: auto;
+    width: 100%;
+    background: none;
+    float: none; }
+    .proj-img img {
+      width: 100%; }
+    .proj-img .mask {
+      line-height: 330px; }
+
+  .wrapper {
+    padding: 50px 5%;
+    width: 90%; }
+
+  .toggle-menu {
+    display: block; }
+
+  .header {
+    min-height: 55px; }
+    .header .main-nav {
+      overflow: hidden;
+      width: 100%; }
+      .header .main-nav ul li {
+        float: none;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: #222222; }
+      .header .main-nav ul li.active, .header .main-nav ul li:hover {
+        padding: 16px 0;
+        border-bottom: none;
+        background: #dc4e23; } }
 .slideInDown {
-  -moz-animation: slideInDown 0.5s cubic-bezier(0, 0.76, 0.13, 1);
-  -webkit-animation: slideInDown 0.5s cubic-bezier(0, 0.76, 0.13, 1);
-  animation: slideInDown 0.5s cubic-bezier(0, 0.76, 0.13, 1);
-  o-animation: slideInDown 0.5s cubic-bezier(0, 0.76, 0.13, 1); }
+  -moz-animation: slideInDown 0.7s cubic-bezier(0, 0.76, 0.13, 1);
+  -webkit-animation: slideInDown 0.7s cubic-bezier(0, 0.76, 0.13, 1);
+  animation: slideInDown 0.7s cubic-bezier(0, 0.76, 0.13, 1);
+  o-animation: slideInDown 0.7s cubic-bezier(0, 0.76, 0.13, 1); }
 
 @-webkit-keyframes slideInDown {
   0% {
@@ -601,10 +663,10 @@ REPONSIVE DESIGN
 
 /*SLIDE UP*/
 .slideInUp {
-  -moz-animation: slideInUp 0.5s cubic-bezier(0, 0.76, 0.13, 1);
-  -webkit-animation: slideInUp 0.5s cubic-bezier(0, 0.76, 0.13, 1);
-  animation: slideInUp 0.5s cubic-bezier(0, 0.76, 0.13, 1);
-  o-animation: slideInUp 0.5s cubic-bezier(0, 0.76, 0.13, 1); }
+  -moz-animation: slideInUp 0.7s cubic-bezier(0, 0.76, 0.13, 1);
+  -webkit-animation: slideInUp 0.7s cubic-bezier(0, 0.76, 0.13, 1);
+  animation: slideInUp 0.7s cubic-bezier(0, 0.76, 0.13, 1);
+  o-animation: slideInUp 0.7s cubic-bezier(0, 0.76, 0.13, 1); }
 
 @-webkit-keyframes slideInUp {
   0% {

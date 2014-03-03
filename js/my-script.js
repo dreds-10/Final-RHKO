@@ -29,7 +29,9 @@ $(document).ready(function() { //when dom is ready
 	
 	
 	$(".toggle-menu").click(function(){
-		$(this).toggleClass("toggle-active");	
+		$(this).toggleClass("toggle-active");
+		$(".main-nav").toggleClass("nav-active");
+			
 	});
 	
 	

@@ -220,10 +220,14 @@ REPONSIVE DESIGN
 	
 	.header{
 		min-height:55px;
-		.main-nav{
 		
-		overflow:hidden;
-		width:100%;
+		.main-nav{		
+			overflow:hidden;
+			width:100%;
+			max-height:0;
+			
+			@include transition;
+			
 		
 		ul{
 			li{
@@ -231,12 +235,13 @@ REPONSIVE DESIGN
 				width:100%;
 				text-align:center;
 				padding:20px 0;
-				border-bottom:$dark-grey;
+				border-top: 1px solid #333;
 			   }
 			 li.active, li:hover{
 				padding:16px 0;
 				border-bottom:none;
 				background:$orange;
+				font-weight:normal;
 			}  
 		   }
 	   }

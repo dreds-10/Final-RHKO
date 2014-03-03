@@ -7,7 +7,6 @@
 		width:$small-width;
 		margin: 0 auto;
 		@include clearfix;
-		
 	}
 	
 	ul{
@@ -46,9 +45,9 @@
 	background-position:center top;
 }
 
-
-
-.main-nav.active{
-	display:block;
-	width:100%;
+.header .main-nav.nav-active{
+	max-height:400px !important;
+	@include transition;
 }
+
+

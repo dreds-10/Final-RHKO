@@ -368,8 +368,7 @@ span.bold {
 
 /*HEADER*/
 .header {
-  background: #222222;
-  border-bottom: 1px solid #eaeaea; }
+  background: #222222; }
   .header .main-nav {
     width: 656px;
     margin: 0 auto; }
@@ -402,7 +401,6 @@ span.bold {
   .sec:after {
     clear: both; }
 
-/*SEC1*/
 .sec1 {
   background: url(../img/bg1.png);
   overflow: hidden;
@@ -410,14 +408,13 @@ span.bold {
 
 .intro {
   width: 60%;
-  padding: 50px 2%;
+  padding: 2%;
   float: left; }
   .intro .intro-wrap {
-    max-width: 656px;
-    margin: 0 auto;
-    width: 100%; }
+    width: 656px;
+    margin: 0 auto; }
     .intro .intro-wrap #logo img {
-      width: 100%; }
+      margin-left: 22px; }
     .intro .intro-wrap #about {
       text-align: center;
       color: #666666; }
@@ -465,68 +462,6 @@ span.bold {
   height: 688px;
   background: url(../img/sidebar.jpg) no-repeat;
   background-size: cover; }
-
-.sec2 {
-  background: url(../img/bg2.jpg);
-  border-top: 1px solid #eaeaea; }
-
-.wrapper {
-  max-width: 980px;
-  width: 96%;
-  padding: 50px 2%;
-  margin: 0 auto;
-  border: 1px solid red; }
-
-.sec-head {
-  text-align: center;
-  color: #cccccc;
-  max-width: 656px;
-  width: 100%;
-  margin: 0 auto 50px; }
-  .sec-head div:first-child {
-    margin-bottom: 20px;
-    font-size: 18px; }
-    .sec-head div:first-child h2 {
-      color: #fff;
-      margin-bottom: 6px;
-      font-size: 32px; }
-
-.project-wrap {
-  width: 100%;
-  min-height: 250px;
-  background: #fff;
-  margin-bottom: 25px;
-  overflow: hidden; }
-
-.proj-img {
-  height: 250px;
-  width: 368px;
-  background: red;
-  float: left;
-  overflow: hidden; }
-  .proj-img img {
-    width: 100%; }
-
-.proj-description {
-  width: auto;
-  margin-left: 368px;
-  height: 210px;
-  padding: 20px;
-  color: #666666; }
-  .proj-description h2 {
-    margin: 0px 0px 10px 0px;
-    font-size: 20px; }
-  .proj-description p {
-    font-size: 14px;
-    margin-bottom: 15px; }
-  .proj-description .tag {
-    padding: 3px 15px;
-    border: 1px solid #dc4e23;
-    font-size: 12px; }
-    .proj-description .tag:hover {
-      background: #dc4e23;
-      color: #fff;
-      cursor: pointer; }
 
 .slideInDown {
   -moz-animation: slideInDown 0.5s cubic-bezier(0, 0.76, 0.13, 1);

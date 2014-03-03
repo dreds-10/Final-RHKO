@@ -20,42 +20,14 @@ $light-grey: #ccc;
 
 body{font-family:$primary-font;}
 a{	text-decoration:none;	color:$orange;}
-a:hover{	text-decoration:underline;	color: #0093cc;}
+a:hover{color: $blue;}
 p{padding:0; margin:0;}
 span.bold{font-weight:bold;}
 
 
 
 /*HEADER*/
-.header{
-	background:$dark-grey;	
-	
-	
-	.main-nav{
-		width:$small-width;
-		margin: 0 auto;
-		@include clearfix;
-	}
-	
-	ul{
-		margin: 0;
-		padding:0;
-		
-		li{
-			float:left;
-			color:$light-grey;
-			list-style:none;
-			padding:15px 19px 15px 19px;
-		}
-		
-		li.active, li:hover{
-			padding:15px 19px 9px 19px;
-			border-bottom:6px solid $orange;
-			color:#fff;
-			font-weight:bold;
-		}
-	}
-}
+@import 'header';
 
 
 /*CONTENT*/
@@ -64,67 +36,191 @@ span.bold{font-weight:bold;}
 	height:auto;
 	@include clearfix;
 }
-.sec1{
-	background:url(../img/bg1.png);
-	overflow:hidden;
-}
 
-.intro{
-	width:66%;
-	padding:2%;
-	float:left;
+/*SEC1*/
+@import 'sec1';
+
+
+
+
+
+
+.sec2{
+	background:url(../img/bg2.jpg);
+	border-top:1px solid #eaeaea;
+}
+.wrapper{
+	max-width:$medium-width;
+	width:96%;
+	padding: 50px 2%;
+	margin: 0 auto;
+	border:1px solid red;
+}	
+.sec-head{
+	text-align:center;
+	color:$light-grey;
+	max-width:$small-width;
+	width:100%;
+	margin: 0 auto 50px;
 	
-	.intro-wrap{
-		width:$small-width;
-		margin: 0 auto;
-		
-		
-		#logo img{
-			margin-left:22px;	
+	div:first-child{
+		margin-bottom:20px;
+		font-size:18px;
+		h2{
+			color:#fff;
+			margin-bottom:6px;
+			font-size:32px;
 		}
-		
-		#about{
-			text-align:center;
-			color:$med-grey;
-			
-			div{
-				margin-bottom:20px;
-			}
-			
-			span.huge{
-				display:block;
-				width:100%;
-				font-size:72px;
-				font-weight:bold;
-				color:$dark-grey;
-				border-top:1px solid $light-grey;
-				border-bottom:1px solid $light-grey;
-				margin:15px 0 25px;
-			}
-			
-			div:first-child p{
-				font-size:24px;
-				margin-top:25px;
-			}
-			
-			div:nth-child(2) p{
-				font-size:12px;
-				line-height:120%;
-			}
-			
-			
-			
-		}
-	}	
+	}
+	
 }
 
-.img-side{
+.project-wrap{
+	width:100%;
+	min-height:250px;
+	background:#fff;
+	margin-bottom:25px;
+	overflow:hidden;
+}	
+
+.proj-img{
+	height:250px;
+	width:368px;
+	background:red;
 	float:left;
-	width:15%;
-	background: blue;
-	height:400px;
+	overflow:hidden;
+	
+	img{width:100%;	}
 }
 
+.proj-description{
+	width: auto;
+	margin-left: 368px;
+	height: 210px;
+	padding: 20px;
+	color:$med-grey;
+	
+	h2{
+		margin:0px 0px 10px 0px;
+		font-size:20px;
+	}
+	
+	p{
+		font-size:14px;
+		margin-bottom:15px;
+	}
+	
+	.tag{
+		padding:3px 15px;
+		border:1px solid $orange;
+		font-size:12px;
+		
+		&:hover{
+			background:$orange;
+			color:#fff;
+			cursor:pointer;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slideInDown{
+	-moz-animation:slideInDown 0.5s cubic-bezier(0,.76,.13,1);
+	-webkit-animation:slideInDown 0.5s cubic-bezier(0,.76,.13,1);
+	animation:slideInDown 0.5s cubic-bezier(0,.76,.13,1);
+	o-animation:slideInDown 0.5s cubic-bezier(0,.76,.13,1);
+}	
+
+@-webkit-keyframes slideInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+
+/*SLIDE UP*/
+.slideInUp{
+	-moz-animation:slideInUp 0.5s cubic-bezier(0,.76,.13,1);
+	-webkit-animation:slideInUp 0.5s cubic-bezier(0,.76,.13,1);
+	animation:slideInUp 0.5s cubic-bezier(0,.76,.13,1);
+	o-animation:slideInUp 0.5s cubic-bezier(0,.76,.13,1);
+}	
+
+@-webkit-keyframes slideInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    transform: translateY(2000px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px);
+    -ms-transform: translateY(2000px);
+    transform: translateY(2000px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 
 
 

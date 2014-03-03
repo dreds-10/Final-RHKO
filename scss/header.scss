@@ -1,0 +1,31 @@
+.header{
+	background:$dark-grey;
+	border-bottom:1px solid #eaeaea;	
+	
+	
+	.main-nav{
+		width:$small-width;
+		margin: 0 auto;
+		@include clearfix;
+		
+	}
+	
+	ul{
+		margin: 0;
+		padding:0;
+		
+		li{
+			float:left;
+			color:$light-grey;
+			list-style:none;
+			padding:15px 19px 15px 19px;
+		}
+		
+		li.active, li:hover{
+			padding:15px 19px 9px 19px;
+			border-bottom:6px solid $orange;
+			color:#fff;
+			font-weight:bold;
+		}
+	}
+}

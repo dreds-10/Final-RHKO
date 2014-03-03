@@ -40,7 +40,7 @@ $(document).ready(function() { //when dom is ready
 				"featureType": "water",
 				"stylers": [
 					{
-						"color": "#56b391"
+						"color": "#dc4e23"
 					},
 					{
 						"visibility": "on"
@@ -51,7 +51,7 @@ $(document).ready(function() { //when dom is ready
 				"featureType": "landscape",
 				"stylers": [
 					{
-						"color": "#f2f2f2"
+						"color": "#eaeaea"
 					}
 				]
 			},
@@ -111,9 +111,9 @@ $(document).ready(function() { //when dom is ready
 		]
 	
 	
-	  	var myLatlng = new google.maps.LatLng(45.2501566,-75.8002568);
+	  	var myLatlng = new google.maps.LatLng(45.4292557,-75.690043);
 	  	var mapOptions = {
-			zoom: 6,
+			zoom: 13,
 			center: myLatlng,
 			scrollwheel: false,
 			styles: custom
@@ -126,7 +126,7 @@ $(document).ready(function() { //when dom is ready
 		  	position: myLatlng,
 		  	map: map,
 		  	title: 'Uluru (Ayers Rock)',
-		  	icon: 'images/pin2.png'
+		  	icon: 'img/pin.png'
 		  
 	  	});
 	}

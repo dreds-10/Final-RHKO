@@ -1,8 +1,10 @@
 @import 'mixins';
 @import 'normalize';
 
+/*WIDTH*/
 $large-width : 1200px;
 $medium-width : 980px;
+$small-width: 656px;
 
 /*FONTS*/
 $primary-font : Open Sans, Arial, sans-serif;
@@ -10,17 +12,16 @@ $secondary-font : Arial, sans-serif;
 
 /*COLOR*/
 $blue : #0087c9;
-$gray: #dc4e23;
+$orange: #dc4e23;
 $dark-grey: #222222;
 $med-grey: #666666;
+$light-grey: #ccc;
 
 
-body{ 
-	font-family:$secondary-font; 
-}
+body{font-family:$primary-font;}
 a{
 	text-decoration:none;
-	color:#fff;
+	color:$orange;
 }
 a:hover{
 	text-decoration:underline;
@@ -29,9 +30,56 @@ a:hover{
 
 
 
+/*HEADER*/
+.header{
+	background:$dark-grey;	
+	
+	
+	.main-nav{
+		width:$small-width;
+		margin: 0 auto;
+		@include clearfix;
+	}
+	
+	ul{
+		margin: 0;
+		padding:0;
+		
+		li{
+			float:left;
+			color:$light-grey;
+			list-style:none;
+			padding:15px 19px 15px 19px;
+		}
+		
+		li.active, li:hover{
+			padding:15px 19px 9px 19px;
+			border-bottom:6px solid $orange;
+		}
+	}
+}
 
 
+/*CONTENT*/
+.sec{
+	width:100%;
+	height:auto;
+}
+.sec1{
+	background:url(../img/bg1.png);
+	height:800px;
+}
 
+.intro{
+	width:$medium-width;
+	height:800px;
+	margin: 0 auto;
+	border:1px solid red;
+}
+
+.img-side{
+	
+}
 
 
 

@@ -834,49 +834,50 @@ REPONSIVE DESIGN
   /* line 233, ../scss/main.scss */
   .sp-w {
     width: 50%;
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 800px) {
-  /* line 242, ../scss/main.scss */
+  /* line 243, ../scss/main.scss */
   .sec1 {
     height: auto;
   }
 
-  /* line 245, ../scss/main.scss */
+  /* line 246, ../scss/main.scss */
   .img-side {
     width: 0;
     height: 0;
     display: none;
   }
 
-  /* line 246, ../scss/main.scss */
+  /* line 247, ../scss/main.scss */
   .intro {
     width: 90%;
     padding: 50px 5%;
   }
 
-  /* line 251, ../scss/main.scss */
+  /* line 252, ../scss/main.scss */
   .intro .intro-wrap #about div:first-child p {
     font-size: 18px;
   }
 
-  /* line 255, ../scss/main.scss */
+  /* line 256, ../scss/main.scss */
   .intro .intro-wrap #about span.huge {
     font-size: 56px;
   }
 }
 @media screen and (max-width: 650px) {
-  /* line 266, ../scss/main.scss */
+  /* line 267, ../scss/main.scss */
   .arrow {
     display: none;
   }
 
-  /* line 268, ../scss/main.scss */
+  /* line 269, ../scss/main.scss */
   .project-wrap {
     height: auto;
   }
 
-  /* line 272, ../scss/main.scss */
+  /* line 273, ../scss/main.scss */
   .proj-description {
     width: 92%;
     height: auto;
@@ -884,38 +885,38 @@ REPONSIVE DESIGN
     padding: 4%;
   }
 
-  /* line 278, ../scss/main.scss */
+  /* line 279, ../scss/main.scss */
   .proj-img {
     height: auto;
     width: 100%;
     background: none;
     float: none;
   }
-  /* line 283, ../scss/main.scss */
+  /* line 284, ../scss/main.scss */
   .proj-img img {
     width: 100%;
   }
-  /* line 286, ../scss/main.scss */
+  /* line 287, ../scss/main.scss */
   .proj-img .mask {
     line-height: 330px;
   }
 
-  /* line 292, ../scss/main.scss */
+  /* line 293, ../scss/main.scss */
   .wrapper {
     padding: 50px 5%;
     width: 90%;
   }
 
-  /* line 297, ../scss/main.scss */
+  /* line 298, ../scss/main.scss */
   .toggle-menu {
     display: block;
   }
 
-  /* line 301, ../scss/main.scss */
+  /* line 302, ../scss/main.scss */
   .header {
     min-height: 55px;
   }
-  /* line 304, ../scss/main.scss */
+  /* line 305, ../scss/main.scss */
   .header .main-nav {
     overflow: hidden;
     width: 100%;
@@ -923,7 +924,7 @@ REPONSIVE DESIGN
     -webkit-transition: all 0.5s cubic-bezier(0, 0.76, 0.13, 1);
     -moz-transition: all 0.5s cubic-bezier(0, 0.76, 0.13, 1);
   }
-  /* line 313, ../scss/main.scss */
+  /* line 314, ../scss/main.scss */
   .header .main-nav ul li {
     float: none;
     width: 100%;
@@ -931,7 +932,7 @@ REPONSIVE DESIGN
     padding: 16px 0;
     border-top: 1px solid #333;
   }
-  /* line 320, ../scss/main.scss */
+  /* line 321, ../scss/main.scss */
   .header .main-nav ul li.active, .header .main-nav ul li:hover, .header .main-nav ul li:active {
     padding: 16px 0;
     border-bottom: none;
@@ -939,19 +940,19 @@ REPONSIVE DESIGN
     font-weight: normal;
   }
 
-  /* line 330, ../scss/main.scss */
+  /* line 331, ../scss/main.scss */
   .sp-w {
     width: 100%;
     margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 450px) {
-  /* line 344, ../scss/main.scss */
+  /* line 345, ../scss/main.scss */
   .intro .intro-wrap #about span.huge {
     font-size: 42px;
   }
 }
-/* line 362, ../scss/main.scss */
+/* line 363, ../scss/main.scss */
 .slideInDown {
   -moz-animation: slideInDown 0.7s cubic-bezier(0, 0.76, 0.13, 1);
   -webkit-animation: slideInDown 0.7s cubic-bezier(0, 0.76, 0.13, 1);
@@ -960,14 +961,14 @@ REPONSIVE DESIGN
 }
 
 @-webkit-keyframes slideInDown {
-  /* line 370, ../scss/main.scss */
+  /* line 371, ../scss/main.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
     transform: translateY(-2000px);
   }
 
-  /* line 376, ../scss/main.scss */
+  /* line 377, ../scss/main.scss */
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -975,7 +976,7 @@ REPONSIVE DESIGN
 }
 
 @keyframes slideInDown {
-  /* line 383, ../scss/main.scss */
+  /* line 384, ../scss/main.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(-2000px);
@@ -983,7 +984,7 @@ REPONSIVE DESIGN
     transform: translateY(-2000px);
   }
 
-  /* line 390, ../scss/main.scss */
+  /* line 391, ../scss/main.scss */
   100% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -992,7 +993,7 @@ REPONSIVE DESIGN
 }
 
 /*SLIDE UP*/
-/* line 404, ../scss/main.scss */
+/* line 405, ../scss/main.scss */
 .slideInUp {
   -moz-animation: slideInUp 0.7s cubic-bezier(0, 0.76, 0.13, 1);
   -webkit-animation: slideInUp 0.7s cubic-bezier(0, 0.76, 0.13, 1);
@@ -1001,14 +1002,14 @@ REPONSIVE DESIGN
 }
 
 @-webkit-keyframes slideInUp {
-  /* line 412, ../scss/main.scss */
+  /* line 413, ../scss/main.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
     transform: translateY(2000px);
   }
 
-  /* line 418, ../scss/main.scss */
+  /* line 419, ../scss/main.scss */
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
@@ -1016,7 +1017,7 @@ REPONSIVE DESIGN
 }
 
 @keyframes slideInUp {
-  /* line 425, ../scss/main.scss */
+  /* line 426, ../scss/main.scss */
   0% {
     opacity: 0;
     -webkit-transform: translateY(2000px);
@@ -1024,7 +1025,7 @@ REPONSIVE DESIGN
     transform: translateY(2000px);
   }
 
-  /* line 432, ../scss/main.scss */
+  /* line 433, ../scss/main.scss */
   100% {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);

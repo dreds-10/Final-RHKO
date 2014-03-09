@@ -5,6 +5,9 @@ $(document).ready(function(){
 });
 
 function loadJSON(){
+	
+   $('.project-main-wrap').addClass('loading');
+	
    var data_file = "js/data.json";
    var http_request = new XMLHttpRequest();
    try{
@@ -27,8 +30,11 @@ function loadJSON(){
    http_request.onreadystatechange  = function(){
 		
 	  
+	  
       // readyState == 4 means the request was successful
       if (http_request.readyState == 4  ){
+		
+		$('.project-main-wrap').removeClass('loading');
 		
         var jsonObj = JSON.parse(http_request.responseText);
 		

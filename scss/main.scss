@@ -83,25 +83,40 @@ SECTION 2
 	
 }
 
+.loading{
+	background:url(../img/loading.gif) no-repeat center;
+	padding:31px;
+}
+
 .toggle-view{
 	position:absolute;
-	width:150px;
-	height:80px;
-	border:1px solid red;
-	bottom:0;
+	width:185px;
+	bottom:-15px;
 	right:-266px;
 	@include clearfix;
 	
 	.view{
 		float:left;
-		width:50px;
-		height:50px;
-		background:green;
-		margin-left:10px;
+		padding:2px 5px 2px 25px;
 		cursor:pointer;
 		font-size:11px !important;
 		height:16px;
+		text-align:right;
+		background-image: url(../img/view.png);
+		background-repeat: no-repeat;
 	}
+	
+	#view-list{
+		margin-left:25px;
+		background-position:bottom left;
+	}
+	#view-thumb{
+		background-position:top left;
+	}
+}
+
+.view-active{
+	text-decoration:underline;
 }
 
 
@@ -319,6 +334,16 @@ REPONSIVE DESIGN
 	.proj-wrap-thumb{
 		width:50%;
 	}
+	
+	.sec-head{
+		margin:0 auto 120px;		
+	}
+	.toggle-view{
+		left:50%;
+		right:0;
+		bottom:-87px;
+		margin-left:-92px;
+	}
 
 }
 
@@ -396,6 +421,11 @@ REPONSIVE DESIGN
 		width:100%;
 		margin-bottom:20px;		
 	}
+	
+	.proj-wrap-thumb{
+		width:100%;
+		margin-bottom:25px;
+	}
 
 }
 
@@ -410,10 +440,7 @@ REPONSIVE DESIGN
 		font-size:42px;
 	}
 	
-	.proj-wrap-thumb{
-		width:100%;
-		margin-bottom:25px;
-	}
+	
 
 
 }

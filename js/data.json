@@ -1,13 +1,35 @@
 [
 	{
-	    "proj_title" : "The Otesha Project", 
-		"proj_url" : "http://www.google.com",
-	    "min_description"   : "The project main's goal was to redesign the dashboard of RideShark's application",
-	    "description" : "Andre Cortellini",
-	    "img_big_url" : "img/project1.jpg",
-		"img_small_url" : "img/project1-mob.jpg",
+	    "proj_title" : "Amnesty International Canada", 
+		"proj_url" : "http://www.amnesty.ca/",
+	    "min_description"   : "Amnesty International is a global movement of over 4.6 million people committed to defending those who are denied justice or freedom.",
+	    "description" : "",
+	    "img_big_url" : "img/logo-amnesty.jpg",
+		"img_small_url" : "img/logo-amnesty-small.jpg",
 		"img_alt" : "rideshark",
-		"tags" : ["tag1", "tag2", "tag3"]		
+		"tags" : ["amnesty", "awesome", "canada"]		
+		
+	},
+	{
+	    "proj_title" : "The Otesha Project", 
+		"proj_url" : "http://www.otesha.ca",
+	    "min_description"   : "The Otesha Project is a national youth-led charitable organization that uses experiential learning, theatre and bicycle tours to engage and empower Canadians of all ages to take action for a more equitable and sustainable world.",
+	    "description" : "",
+	    "img_big_url" : "img/logo-otesha.jpg",
+		"img_small_url" : "img/logo-otesha-small.jpg",
+		"img_alt" : "otesha project",
+		"tags" : ["otesha", "kindness", "awesome", "amazing"]		
+		
+	},
+	{
+	    "proj_title" : "The Otesha Project", 
+		"proj_url" : "http://www.otesha.ca",
+	    "min_description"   : "The Otesha Project is a national youth-led charitable organization that uses experiential learning, theatre and bicycle tours to engage and empower Canadians of all ages to take action for a more equitable and sustainable world.",
+	    "description" : "",
+	    "img_big_url" : "img/logo-ladies-learning-code.jpg",
+		"img_small_url" : "img/logo-ladies-learning-code-small.jpg",
+		"img_alt" : "otesha project",
+		"tags" : ["otesha", "kindness", "awesome", "amazing"]		
 		
 	}
 	

@@ -1,13 +1,15 @@
 [
 	{
-	    "title" : "The Otesha Project", 
+	    "proj_title" : "The Otesha Project", 
 		"proj_url" : "http://www.google.com",
 	    "min_description"   : "The project main's goal was to redesign the dashboard of RideShark's application",
 	    "description" : "Andre Cortellini",
 	    "img_big_url" : "img/project1.jpg",
-		"img_small_url" : "img/w1.jpg",
-		"img_alt" : "rideshark"		
+		"img_small_url" : "img/project1-mob.jpg",
+		"img_alt" : "rideshark",
+		"tags" : ["tag1", "tag2", "tag3"]		
 		
 	}
+	
 	
 ]

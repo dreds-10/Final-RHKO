@@ -44,9 +44,9 @@ function loadJSON(){
 			projectWrap.className = "project-wrap";		
 			
 			
-			/****************
-			CREATING THE IMG
-			****************/
+			/**************************
+			CREATING THE RESPONSIVE IMGS
+			***************************/
 			//project link
 			var projTag = document.createElement("a");
 			projTag.setAttribute('href', jsonObj[key].proj_url);	
@@ -56,47 +56,89 @@ function loadJSON(){
 			projImgDiv.className = "proj-img";
 			projTag.appendChild(projImgDiv);
 			
-			/*
-			var projectImg = "<a href='" + jsonObj[key].proj_url + "'>" + 
-			     + '<div class="class="proj-img">' +		
-					+ '<span data-picture="" data-alt="' + jsonObj[key].img_alt + '">' +						
-					  +	'<span data-src="' + jsonObj[key].img_big_url '" + data-media="(max-width: 3000px)">' +						
-						  +	'<img alt="' + jsonObj[key].img_alt + '" + src="' + jsonObj[key].img_big_url + '">' +						
-					  + '</span>' +	
-					+ '</span>' +
-				 + '</div>' +
-			  + "</a>";
-			*/
+			//Main Span
+			var mainSpan = document.createElement("span");
+			mainSpan.setAttribute('data-picture', "");		
+			mainSpan.setAttribute('data-alt', jsonObj[key].img_alt);
+			projImgDiv.appendChild(mainSpan);
+			
+			//Img1 Span
+			var img1Span = document.createElement("span");
+			img1Span.setAttribute('data-src', jsonObj[key].img_big_url);
+			img1Span.setAttribute('data-media', "(max-width: 3000px)");	
+			mainSpan.appendChild(img1Span);
+			
+			//Img1 img
+			var img1 = document.createElement("img");
+			img1.setAttribute('src', jsonObj[key].img_big_url);
+			img1.setAttribute('alt', jsonObj[key].img_alt);	
+			img1Span.appendChild(img1);
+			
+			//Img1 Span
+			var img2Span = document.createElement("span");
+			img2Span.setAttribute('data-src', jsonObj[key].img_small_url);
+			img2Span.setAttribute('data-media', "(max-width: 650px)");	
+			mainSpan.appendChild(img2Span);
+			
+			//no script
+			var noscript = document.createElement("noscript");
+			mainSpan.appendChild(noscript);
+			//img no script
+			var imgNo = document.createElement("img");
+			imgNo.setAttribute('src', jsonObj[key].img_big_url);
+			imgNo.setAttribute('alt', jsonObj[key].img_alt);	
+			noscript.appendChild(imgNo);
+			
+			//create the overlay div
+		    var mask = document.createElement("div");
+			mask.className = "mask";
+			mask.innerHTML = "View Project";
+			projImgDiv.appendChild(mask);
+			
+			
+			
+			/**************************
+			CREATING THE PROJECT INFO
+			***************************/
+			//create the warapping div
+			var projDescription = document.createElement("div");
+			projDescription.className = "proj-description";
+			
+			//create the project title
+			var title = document.createElement("h2");
+			title.innerHTML = jsonObj[key].proj_title;
+			projDescription.appendChild(title);
+			
+			//create the project title
+			var p1 = document.createElement("p");
+			p1.innerHTML = jsonObj[key].min_description;
+			projDescription.appendChild(p1);
+			
+			//create MORE BTN
+			var projLink = document.createElement("a");
+			projLink.setAttribute('href', jsonObj[key].proj_url);
+			projDescription.appendChild(projLink);
+			
+			//More Info txt
+			var m = document.createElement("p");
+			m.innerHTML = "More info...";
+			projLink.appendChild(m);
+			
+			for(var t in jsonObj[key].tags){
+				//Tags
+				var tag = document.createElement("span");
+				tag.className = "tag";
+				tag.innerHTML = jsonObj[key].tags[t];
+				projDescription.appendChild(tag);
+			}
+			
 			
 			//universal appending
 			projectWrap.appendChild(projTag);
+			projectWrap.appendChild(projDescription);
 			mainWrap.appendChild(projectWrap);
 			
-			/*
-			//create the title
-			var title = document.createElement("h1");
-			title.innerHTML = jsonObj[key].title;	
-			wrap.appendChild(title);
 			
-			//creative the images
-			var img = document.createElement("img");
-			img.setAttribute('src', jsonObj[key].imageUrl);	
-			img.setAttribute('alt', jsonObj[key].imageAlt);			
-			wrap.appendChild(img);			
-			
-			//create the author
-			var author = document.createElement("h2");
-			author.innerHTML = jsonObj[key].author;	
-			wrap.appendChild(author);
-			
-			//create descrtiption
-			var description = document.createElement("p");
-			description.innerHTML = jsonObj[key].description;	
-			wrap.appendChild(description);
-			
-			//append the divs into the main one
-			feedWrapper.appendChild(wrap);
-			*/
 			
 			
 		}

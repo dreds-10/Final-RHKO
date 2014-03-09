@@ -29,6 +29,26 @@ $(document).ready(function() { //when dom is ready
 	});
 	
 	
+	/********************
+	TOGGLE VIEW
+	********************/
+	$('.view').click(function(){
+		if($(this).attr("id") == "view-thumb"){
+			$('.project-wrap').addClass('proj-wrap-thumb');
+			$('.proj-img').addClass('proj-img-thumb');
+			$('.proj-img img').addClass('proj-img-img-thumb');
+			$('.proj-description').css("display", "none");
+			$('.proj-img span').addClass('spanClass');
+		}else if($(this).attr("id") == "view-list"){
+			$('.project-wrap').removeClass('proj-wrap-thumb');
+			$('.proj-img').removeClass('proj-img-thumb');
+			$('.proj-img img').removeClass('proj-img-img-thumb');
+			$('.proj-description').css("display", "block");
+			$('.proj-img span').removeClass('spanClass');
+		}
+	});
+	
+	
 	
 	/**************************
 	    GOOGLE MAPS 

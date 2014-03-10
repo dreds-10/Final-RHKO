@@ -1,0 +1,72 @@
+[
+	{
+	    "proj_title" : "Amnesty International Canada", 
+		"proj_url" : "http://www.amnesty.ca/",
+	    "min_description"   : "Amnesty International is a global movement of over 4.6 million people committed to defending those who are denied justice or freedom.",
+	    "description" : "",
+	    "img_big_url" : "img/logo-amnesty.jpg",
+		"img_small_url" : "img/logo-amnesty-small.jpg",
+		"img_alt" : "amnesty international canada logo",
+		"tags" : ["amnesty", "awesome", "canada"]		
+		
+	},
+	{
+	    "proj_title" : "The Otesha Project", 
+		"proj_url" : "http://www.otesha.ca",
+	    "min_description"   : "The Otesha Project is a national youth-led charitable organization that uses experiential learning, theatre and bicycle tours to engage and empower Canadians of all ages to take action for a more equitable and sustainable world.",
+	    "description" : "",
+	    "img_big_url" : "img/logo-otesha.jpg",
+		"img_small_url" : "img/logo-otesha-small.jpg",
+		"img_alt" : "otesha project logo",
+		"tags" : ["otesha", "kindness", "awesome", "amazing"]		
+		
+	},
+	{
+	    "proj_title" : "Ladies Learning Code", 
+		"proj_url" : "http://ladieslearningcode.com/",
+	    "min_description"   : "Ladies Learning Code is a women-run not-for-profit group working to empower everyone to feel comfortable learning beginner-friendly technical skills in a social, collaborative way.",
+	    "description" : "",
+	    "img_big_url" : "img/logo-ladies-learning-code.jpg",
+		"img_small_url" : "img/logo-ladies-learning-code-small.jpg",
+		"img_alt" : "Ladies Learning Code logo project",
+		"tags" : ["ladies", "girls", "cool"]		
+		
+	},
+	{
+	    "proj_title" : "The Otesha Project", 
+		"proj_url" : "http://www.otesha.ca",
+	    "min_description"   : "The Otesha Project is a national youth-led charitable organization that uses experiential learning, theatre and bicycle tours to engage and empower Canadians of all ages to take action for a more equitable and sustainable world.",
+	    "description" : "",
+	    "img_big_url" : "img/logo-otesha.jpg",
+		"img_small_url" : "img/logo-otesha-small.jpg",
+		"img_alt" : "otesha project logo",
+		"tags" : ["otesha", "kindness", "awesome", "amazing"]		
+		
+	},
+	{
+	    "proj_title" : "Ladies Learning Code", 
+		"proj_url" : "http://ladieslearningcode.com/",
+	    "min_description"   : "Ladies Learning Code is a women-run not-for-profit group working to empower everyone to feel comfortable learning beginner-friendly technical skills in a social, collaborative way.",
+	    "description" : "",
+	    "img_big_url" : "img/logo-ladies-learning-code.jpg",
+		"img_small_url" : "img/logo-ladies-learning-code-small.jpg",
+		"img_alt" : "Ladies Learning Code logo project",
+		"tags" : ["ladies", "girls", "cool"]		
+		
+	},
+	{
+	    "proj_title" : "Amnesty International Canada", 
+		"proj_url" : "http://www.amnesty.ca/",
+	    "min_description"   : "Amnesty International is a global movement of over 4.6 million people committed to defending those who are denied justice or freedom.",
+	    "description" : "",
+	    "img_big_url" : "img/logo-amnesty.jpg",
+		"img_small_url" : "img/logo-amnesty-small.jpg",
+		"img_alt" : "amnesty international canada logo",
+		"tags" : ["amnesty", "awesome", "canada"]		
+		
+	}
+	
+	
+	
+	
+]

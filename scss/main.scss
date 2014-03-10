@@ -1,0 +1,140 @@
+
+/************************
+    GENERAL STYLES
+*************************/
+@import 'mixins';
+@import 'normalize';
+
+/*WIDTH*/
+$large-width : 1200px;
+$medium-width : 980px;
+$small-width: 656px;
+
+/*FONTS*/
+$primary-font : Open Sans, Arial, sans-serif;
+$secondary-font : Arial, sans-serif;
+
+/*COLOR*/
+$blue : #0087c9;
+$orange: #dc4e23;
+$dark-grey: #222222;
+$med-grey: #666666;
+$light-grey: #ccc;
+
+
+body{font-family:$primary-font; }
+a{	text-decoration:none;	color:$orange;}
+a:hover{color: $blue;}
+p{padding:0; margin:0;}
+span.bold{font-weight:bold;}
+
+
+/************************
+    HOME PAGE
+*************************/
+/*HEADER*/
+@import 'header';
+
+/*CONTENT*/
+.sec{	width:100%;	height:auto;@include clearfix;}
+
+/*SEC1*/
+@import 'sec1';
+
+
+/*SEC2*/
+@import 'sec2';
+
+
+/*SEC3*/
+@import 'sec3';
+
+
+/*SEC4*/
+@import 'sec4';
+
+
+
+
+/************************
+    DETAILS PAGE
+*************************/
+/*DETAILS*/
+@import 'details';
+
+
+
+/************************
+    CONTACT PAGE
+*************************/
+/*CONTACT*/
+@import 'contact';
+
+
+
+/************************
+   RESPONSIVE LAYOUT
+*************************/
+/*RESPONSIVE*/
+@import 'responsive';
+
+
+
+/************************
+    ANIMATIONS
+*************************/
+/*ANIMATIONS*/
+@import 'animations';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

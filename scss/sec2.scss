@@ -1,0 +1,208 @@
+/*************
+SECTION 2
+****************/
+
+.sec2{
+	background:url(../img/bg2.jpg);
+	border-top:1px solid #eaeaea;
+}
+.wrapper{
+	max-width:$medium-width;
+	width:96%;
+	padding: 50px 2%;
+	margin: 0 auto;
+}	
+
+.project-main-wrap{
+	@include clearfix;
+	min-height:300px;
+}
+
+.sec-head{
+	text-align:center;
+	color:$light-grey;
+	max-width:450px;
+	width:100%;
+	margin: 0 auto 50px;
+	position:relative;
+	
+	div:first-child{
+		margin-bottom:20px;
+		font-size:18px;
+		h2{
+			color:#fff;
+			margin-bottom:6px;
+			font-size:32px;
+		}
+	}
+	
+}
+
+.loading{
+	background:url(../img/loading.gif) no-repeat center;
+	padding:31px;
+}
+
+.toggle-view{
+	position:absolute;
+	width:185px;
+	bottom:-15px;
+	right:-266px;
+	@include clearfix;
+	
+	.view{
+		float:left;
+		padding:2px 5px 2px 25px;
+		cursor:pointer;
+		font-size:11px !important;
+		height:16px;
+		text-align:right;
+		background-image: url(../img/view.png);
+		background-repeat: no-repeat;
+	}
+	
+	.view-list{
+		margin-left:25px;
+		background-position:0px -60px;
+	}
+	.view-thumb{
+		background-position:0px -40px;
+	}
+}
+
+.view-list.view-active{
+	background-position:0px -20px;
+	color:$orange;
+}
+
+.view-thumb.view-active{
+	background-position:0px 0px;
+	color:$orange;
+}
+
+
+.project-wrap{
+	width:100%;
+	min-height:250px;
+	background:#fff;
+	margin-bottom:25px;
+	overflow:hidden;
+}	
+
+.proj-img{
+	height:250px;
+	width:368px;
+	background:$dark-grey;
+	float:left;
+	overflow:hidden;
+	position:relative;
+	border-right:1px solid #ccc;
+	
+	img{height:100%;	}
+	.mask{
+		width:100%;
+		height:100%;
+		background-color:rgba(220,78,35,0.9);
+		position:absolute;
+		top:100%;
+		@include transition;
+		
+		color:#fff;
+		text-align:center;
+		line-height:400px;
+		background-image:url(../img/mask.png);
+		background-repeat:no-repeat;
+		background-position:center;
+	}
+	
+	&:hover .mask{
+		top:0;
+	}
+}
+
+.proj-description{
+	width: auto;
+	margin-left: 368px;
+	height: 210px;
+	padding: 20px;
+	color:$med-grey;
+	
+	h2{
+		margin:0px 0px 10px 0px;
+		font-size:20px;
+	}
+	
+	p{
+		font-size:13px;
+		margin-bottom:15px;
+	}
+	
+	.tag{
+		padding:2px 12px;
+		border:1px solid $orange;
+		font-size:12px;
+		margin-right:5px;
+		
+		&:hover{
+			background:$orange;
+			color:#fff;
+			cursor:pointer;
+		}
+	}
+}
+
+
+#load-more{
+	padding: 10px 0;
+	width: 180px;
+	background: #dc4e23;
+	margin: 25px auto;
+	color: #fff;
+	text-align:center;
+	cursor:pointer;
+	
+	&:hover{
+		background:$blue;
+	}
+}
+
+
+#load-old-proj{
+	@include clearfix;
+}
+
+.img-lower{
+	width:100%;
+	height:147px;
+	background:url(../img/lowbar.jpg);
+}
+
+
+
+/**************
+TOGGLE VIEW CLASSES
+*************/
+.proj-wrap-thumb{
+	width:33.3%;
+	min-height:1px;
+	float:left;
+	margin-bottom:0px;
+}
+
+.proj-img-thumb{
+	width:100%;
+	height:auto;
+}
+
+.proj-img-img-thumb{
+	height:auto !important;
+	width:100%;
+}
+
+.spanClass{
+	padding:0;
+	display:block;
+	margin:0;
+	height:100%;
+	margin-bottom:-3px;
+}

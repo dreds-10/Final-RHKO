@@ -354,6 +354,19 @@ span.huge{font-size:64px;}
 
 
 
+/*******************
+CONTACT PAGE
+*******************/
+.contact-wrap{
+	color:#eaeaea;
+	@include clearfix;
+	max-width:$small-width;
+	margin: 0 auto;
+	width:100%;
+	border:1px solid red;
+}
+
+
 
 
 

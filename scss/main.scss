@@ -198,6 +198,20 @@ SECTION 2
 }
 
 
+#load-more{
+	padding: 10px 0;
+	width: 180px;
+	background: #dc4e23;
+	margin: 25px auto;
+	color: #fff;
+	text-align:center;
+	cursor:pointer;
+}
+
+#load-old-proj{
+	@include clearfix;
+}
+
 .img-lower{
 	width:100%;
 	height:147px;

@@ -180,10 +180,6 @@ $(document).ready(function() { //when dom is ready
 	
     google.maps.event.addDomListener(window, 'load', initialize);
 	
-	
-	
-	
-	
 
 });//WHEN DOM IS READY FUNCTION
 

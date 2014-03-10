@@ -2,6 +2,7 @@
 
 $(document).ready(function(){
 	loadJSON();
+	loadOlder();
 });
 
 function loadJSON(){
@@ -137,7 +138,6 @@ function loadJSON(){
 				projDescription.appendChild(tag);
 			}
 			
-			
 			//universal appending
 			projectWrap.appendChild(projTag);
 			projectWrap.appendChild(projDescription);
@@ -153,10 +153,32 @@ function loadJSON(){
 			});
 			
 			
+			
 		}
 		
 		
-
+		
+		//LOAD MORE PROJECTS BTN
+		var loadM = document.createElement("a");
+		loadM.setAttribute('href', 'old-proj.html');
+		document.querySelector(".wrapper").appendChild(loadM);
+		
+		var btn = document.createElement("div");
+		btn.id = "load-more";
+		btn.innerHTML = "Load more";
+		loadM.appendChild(btn);
+		
+		//DELAY TO FADE THE BTN
+		$("#load-more").css("display", "none");
+		$("#load-more").delay(300*8).fadeIn(300);
+		
+		//CREATE THE DIV THAT WILL CONTAIN ALL THE OLD PROJECTS WHEN THE BTN ABOVE IS TRIGGED
+		var loadDiv = document.createElement("div");
+		loadDiv.id = "load-old-proj";
+		document.querySelector(".wrapper").appendChild(loadDiv);
+		
+		
+		
 		
 		
       }
@@ -165,4 +187,55 @@ function loadJSON(){
    http_request.open("GET", data_file, true);
    http_request.send();
 }
+
+
+
+
+/*************************
+LOAD OLDER PROJECTS
+************************/
+function loadOlder() {
+	
+ $('.wrapper').on("click", "#load-more",function(e) {
+    e.preventDefault();  
+    loadOldProjects();
+ });
+}
+
+// empty elements from #inner div, add loading class, load in elements from link #inner div, remove loading class when complete.
+function loadOldProjects() {
+    $('#load-old-proj').load("old-proj.html" + ' .project-wrap', function() {
+  	$('#load-more').css('display', 'none');
+	
+	$(".project-wrap").css("display", "none");	
+	//each project function
+	$(".project-wrap").each(function(){
+		//multiply the delay by the index number of each project (0,1,2,3..etc)
+		var index = $(this).index();
+		$(this).delay(300*index).fadeIn(300);
+	});
+	
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

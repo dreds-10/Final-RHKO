@@ -143,7 +143,14 @@ function loadJSON(){
 			projectWrap.appendChild(projDescription);
 			mainWrap.appendChild(projectWrap);
 			
-			
+			$(".project-wrap").css("display", "none");
+	
+			//each project function
+		    $(".project-wrap").each(function(){
+				//multiply the delay by the index number of each project (0,1,2,3..etc)
+				var index = $(this).index();
+				$(this).delay(300*index).fadeIn(300);
+			});
 			
 			
 		}

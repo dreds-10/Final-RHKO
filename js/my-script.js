@@ -3,6 +3,9 @@
 
 $(document).ready(function() { //when dom is ready		 
 	 
+	 
+
+	 
 	 /**************************
 	  RESPONSIVE LAYOUT
 	****************************/	 
@@ -57,13 +60,18 @@ $(document).ready(function() { //when dom is ready
 			$('.proj-description').css("display", "none");
 			$('.proj-img span').addClass('spanClass');
 			
-			
+			//function that fades in elements
+			elementFade();
+		
 		}else if($(this).attr("id") == "view-list"){
 			$('.project-wrap').removeClass('proj-wrap-thumb');
 			$('.proj-img').removeClass('proj-img-thumb');
 			$('.proj-img img').removeClass('proj-img-img-thumb');
 			$('.proj-description').css("display", "block");
 			$('.proj-img span').removeClass('spanClass');
+			
+			//function that fades in elements
+			elementFade();
 		}
 	});
 	
@@ -181,6 +189,19 @@ $(document).ready(function() { //when dom is ready
 
 
 
+
+function elementFade(){
+	    //hide all the elements
+		$(".project-wrap").css("display", "none");
+	
+		//each project function
+		$(".project-wrap").each(function(){
+			//multiply the delay by the index number of each project (0,1,2,3..etc)
+			var index = $(this).index();
+			$(this).delay(300*index).fadeIn(300);
+		});
+	
+}
 
 
 

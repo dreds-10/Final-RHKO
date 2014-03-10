@@ -29,6 +29,19 @@ $(document).ready(function() { //when dom is ready
 	});
 	
 	
+	
+	/********************
+	SCROLL NEXT SECTION
+	********************/
+	$('.arrow').on('click', function(){
+		$target = $('.sec2').offset().top+5;
+		
+		$('body, html').animate({scrollTop : $target}, 300);
+		return false;
+	});
+	
+	
+	
 	/********************
 	TOGGLE VIEW
 	********************/

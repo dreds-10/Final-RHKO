@@ -49,7 +49,6 @@ function loadJSON(){
 			var projectWrap = document.createElement("div");
 			projectWrap.className = "project-wrap";		
 			
-			
 			/**************************
 			CREATING THE RESPONSIVE IMGS
 			***************************/

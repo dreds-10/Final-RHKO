@@ -106,17 +106,23 @@ SECTION 2
 		background-repeat: no-repeat;
 	}
 	
-	#view-list{
+	.view-list{
 		margin-left:25px;
-		background-position:bottom left;
+		background-position:0px -60px;
 	}
-	#view-thumb{
-		background-position:top left;
+	.view-thumb{
+		background-position:0px -40px;
 	}
 }
 
-.view-active{
-	text-decoration:underline;
+.view-list.view-active{
+	background-position:0px -20px;
+	color:$orange;
+}
+
+.view-thumb.view-active{
+	background-position:0px 0px;
+	color:$orange;
 }
 
 
@@ -235,6 +241,19 @@ SECTION 3
 .sec3{
 	padding:80px 0;
 }
+
+.sec-head2{
+	color:$med-grey;
+	
+	div:first-child{
+		h2{
+			color:$dark-grey;
+		}
+	}
+	
+}
+
+
 .sponsors-wrap{
 	@include clearfix;
 	width:90%;
@@ -308,6 +327,19 @@ REPONSIVE DESIGN
 		width:50%;	
 		margin-bottom:20px;	
 	}
+	
+	.sec-head{
+		margin:0 auto 120px;		
+	}
+	.sec-head2{
+		margin:0 auto 50px;	
+	}
+	.toggle-view{
+		left:50%;
+		right:0;
+		bottom:-87px;
+		margin-left:-92px;
+	}
 }
 
 
@@ -335,15 +367,7 @@ REPONSIVE DESIGN
 		width:50%;
 	}
 	
-	.sec-head{
-		margin:0 auto 120px;		
-	}
-	.toggle-view{
-		left:50%;
-		right:0;
-		bottom:-87px;
-		margin-left:-92px;
-	}
+	
 
 }
 

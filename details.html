@@ -40,8 +40,8 @@
     	<div class="toggle-menu"></div>
         <nav class="main-nav">        	
             <ul>
-            	<a href="#"><li class="active">Home</li></a>
-                <a href="details.html"><li>Event details and Registration</li></a>
+            	<a href="index.html"><li>Home</li></a>
+                <a href="#"><li class="active">Event details and Registration</li></a>
                 <a href="contact"><li>Contact us</li></a>
                 <a href="#"><li>FAQ</li></a>
                 <a href="#"><li>Arquive</li></a>
@@ -68,7 +68,7 @@
                 </div>
                 <div id="about">
                     <div>
-                        <p>Join us on our <a href="details.html"><span class="bold">two-day</span></a> Ottawa hackathon on</p>
+                        <p>Join us on our <a href="#"><span class="bold">two-day</span></a> Ottawa hackathon on</p>
                         <span class="huge">Dec. 6-8, 2013</span>
                     </div>
                     <div>
@@ -104,28 +104,39 @@
     <!--SECTION2-->
     <section class="sec sec2">
     	<div class="wrapper">
-        	<div class="sec-head">
+        	<div class="sec-head sec-head-details">
             	<div>
-                	<h2>Projects</h2>
-                	<p>we will be hacking on</p>
+                	<h2>Event Details</h2>
+                	<p>Calling all designers, front & back-end developers!</p>
                 </div>
-                <div>
-                	<p>Random Hacks of Kindness is a global initiative to make the world a better place by developing solutions in response to challenges facing humanity. Check the projects we will be working on during the hackathon.</p>
-                </div>
-                
-                <div class="toggle-view">
-                	<div class="view view-thumb" id="view-thumb">THUMBNAILS</div>
-                    <div class="view view-list view-active" id="view-list">LIST</div>
+                <div>                	
+                	<p>Come join us in working on interesting projects solving real-world problems. We provide the space to hack, 5 meals throughout the weekend and awesome swag.</p>
+                    <p><span class="bold sp-orange huge">$5</span></p>
                 </div>
             </div>
             
             
-            <div class="project-main-wrap">
-
-
-            	<!--HERE WILL BE FILLED WITH THE PROJECTS FROM THE JSON FILE-->
-
-
+            <div class="details-wrap">
+            	<div id="event-img">
+                	 <span data-picture data-alt="shopify">
+                        <span data-src="img/lounge.jpg" data-media="(max-width: 3000px)"></span>
+                        <span data-src="img/lounge-small.jpg" data-media="(max-width: 800px)"></span>
+                        <noscript><img src="img/lounge.jpg" alt="shopify"></noscript>
+                    </span>  
+                </div>
+                
+                <div id="date-time-wrap">
+                    <div class="date-time">
+                        <h3>Date</h3>
+                        <p>Friday December 6th - Sunday December 8th</p>
+                    </div>
+                    
+                    <div class="date-time">
+                        <h3>Location</h3>
+                        <p>The Shopify Lounge, 126 York Street. </p>
+                        <p><span>*Please enter through the glass doors at the back of the building.</span></p>
+                    </div>
+                </div>
             </div><!--main-wrap-->
          
         </div>
@@ -184,7 +195,6 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 	<script src="js/my-script.js"></script>
-    <script src="js/json-ajax.js"></script>
     <script src="js/matchmedia.js"></script>
 	<script src="js/picturefill.js"></script>
 	<!--script-->

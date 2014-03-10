@@ -61,6 +61,7 @@ SECTION 2
 
 .project-main-wrap{
 	@include clearfix;
+	min-height:400px;
 }
 
 .sec-head{
@@ -316,6 +317,44 @@ SECTION 4
 
 
 
+/*******************
+DETAILS PAGE
+*******************/
+.details-wrap{
+	color:#eaeaea;
+	@include clearfix;
+}
+
+#date-time-wrap{
+	float:left;
+	width:57%;
+	margin-left:3%;
+}
+
+#event-img{
+	float:left;
+	width:40%;
+	
+	img{
+		width:100%;
+	}
+}
+.date-time{
+	margin-bottom:30px;		
+	
+	h3{margin:0; padding:0; margin-bottom:15px; font-size:24px;}
+	span{font-size:12px;}		
+}
+
+
+span.huge{font-size:64px;}
+.sp-orange{color:$orange}
+
+
+
+
+
+
 
 
 
@@ -334,6 +373,10 @@ REPONSIVE DESIGN
 	.sec-head2{
 		margin:0 auto 50px;	
 	}
+	.sec-head-details{
+		margin-bottom:15px;
+	}
+	
 	.toggle-view{
 		left:50%;
 		right:0;
@@ -365,6 +408,24 @@ REPONSIVE DESIGN
 	
 	.proj-wrap-thumb{
 		width:50%;
+	}
+	
+	
+	#date-time-wrap{
+		float:none;
+		width:100%;
+		margin-left:0;
+		text-align:center;
+	}
+	
+	#event-img{
+		float:none;
+		width:100%;
+		margin-bottom:15px;
+	}
+	
+	.sec-head-details{
+		margin-bottom:15px;
 	}
 	
 	

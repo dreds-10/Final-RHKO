@@ -85,9 +85,14 @@
 .img-side{
 	float:left;
 	width:18%;
-	background: blue;
 	height:688px;
-	
-	background:url(../img/sidebar.jpg) no-repeat;
 	background-size:cover;
+}
+
+#side1{
+	background:url(../img/sidebar.jpg) no-repeat;
+}
+
+#side2{
+	background:url(../img/sidebar2.jpg) no-repeat;
 }

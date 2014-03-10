@@ -60,6 +60,9 @@ $(document).ready(function() { //when dom is ready
 			$('.proj-description').css("display", "none");
 			$('.proj-img span').addClass('spanClass');
 			
+			//hide the Load More btn
+			$('#load-more').hide();
+			
 			//function that fades in elements
 			elementFade();
 		
@@ -69,6 +72,9 @@ $(document).ready(function() { //when dom is ready
 			$('.proj-img img').removeClass('proj-img-img-thumb');
 			$('.proj-description').css("display", "block");
 			$('.proj-img span').removeClass('spanClass');
+			
+			//fade the load more btn
+			$("#load-more").delay(200*8).fadeIn(300);
 			
 			//function that fades in elements
 			elementFade();
@@ -189,12 +195,18 @@ $(document).ready(function() { //when dom is ready
 function elementFade(){
 	    //hide all the elements
 		$(".project-wrap").css("display", "none");
-	
+		
+		projs = document.querySelectorAll(".project-wrap");
+		//loop through the images and add the function to create the lightbox
+		for(var j=0;j<projs.length;j++){
+			projs[j].id = j;
+		}
+		
 		//each project function
 		$(".project-wrap").each(function(){
 			//multiply the delay by the index number of each project (0,1,2,3..etc)
-			var index = $(this).index();
-			$(this).delay(300*index).fadeIn(300);
+			var id = $(this).attr("id");
+			$(this).delay(200*id).fadeIn(300);
 		});
 	
 }

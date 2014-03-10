@@ -1,0 +1,171 @@
+/*******************************
+REPONSIVE DESIGN
+*********************************/
+@media screen and (max-width: 1080px) {
+	.sp-w{
+		width:50%;	
+		margin-bottom:20px;	
+	}
+	
+	.sec-head{
+		margin:0 auto 120px;		
+	}
+	.sec-head2{
+		margin:0 auto 50px;	
+	}
+	.sec-head-details{
+		margin-bottom:15px;
+	}
+	
+	.toggle-view{
+		left:50%;
+		right:0;
+		bottom:-87px;
+		margin-left:-92px;
+	}
+}
+
+
+
+@media screen and (max-width: 800px) {
+
+	.sec1{
+		height:auto;
+	}
+	.img-side{width:0; height:0; display:none;}
+	.intro{
+		width:90%;
+		padding: 50px 5%;
+	}
+	
+	.intro .intro-wrap #about div:first-child p{
+		font-size:18px;
+	}
+	
+	.intro .intro-wrap #about span.huge{
+		font-size:56px;
+	}
+	
+	.proj-wrap-thumb{
+		width:50%;
+	}
+	
+	
+	#date-time-wrap{
+		float:none;
+		width:100%;
+		margin-left:0;
+		text-align:center;
+	}
+	
+	#event-img{
+		float:none;
+		width:100%;
+		margin-bottom:15px;
+	}
+	
+	.sec-head-details{
+		margin-bottom:15px;
+	}
+	
+	
+
+}
+
+
+
+
+@media screen and (max-width: 650px){
+
+	.arrow{display:none;}
+	
+	.project-wrap{
+		height:auto;
+	}
+	
+	.proj-description{
+		width:92%;
+		height:auto;
+		margin-left:0;
+		padding:4%;
+	}
+	.proj-img {
+		height:auto;
+		width:100%;
+		background:none;
+		float:none;
+		
+		img{
+			width:100%;
+		}
+		.mask{
+			line-height:330px;
+		}
+	}
+
+	
+	.wrapper{
+		padding:50px 5%;
+		width:90%;
+	}
+	
+	.toggle-menu{
+		display:block;
+	}
+	
+	.header{
+		min-height:55px;
+		
+		.main-nav{		
+			overflow:hidden;
+			width:100%;
+			max-height:0;
+			
+			@include transition;
+			
+		
+		ul{
+			li{
+				float:none;
+				width:100%;
+				text-align:center;
+				padding:16px 0;
+				border-top: 1px solid #333;
+			   }
+			 li.active, li:hover, li:active{
+				padding:16px 0;
+				border-bottom:none;
+				background:$orange;
+				font-weight:normal;
+			}  
+		   }
+	   }
+	}
+	
+	.sp-w{
+		width:100%;
+		margin-bottom:20px;		
+	}
+	
+	.proj-wrap-thumb{
+		width:100%;
+		margin-bottom:25px;
+	}
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 450px){
+
+    .intro .intro-wrap #about span.huge{
+		font-size:42px;
+	}
+	
+	
+
+
+}

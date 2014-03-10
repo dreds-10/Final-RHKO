@@ -149,7 +149,7 @@ function loadJSON(){
 		    $(".project-wrap").each(function(){
 				//multiply the delay by the index number of each project (0,1,2,3..etc)
 				var index = $(this).index();
-				$(this).delay(300*index).fadeIn(300);
+				$(this).delay(200*index).fadeIn(300);
 			});
 			
 			
@@ -170,7 +170,7 @@ function loadJSON(){
 		
 		//DELAY TO FADE THE BTN
 		$("#load-more").css("display", "none");
-		$("#load-more").delay(300*8).fadeIn(300);
+		$("#load-more").delay(200*8).fadeIn(300);
 		
 		//CREATE THE DIV THAT WILL CONTAIN ALL THE OLD PROJECTS WHEN THE BTN ABOVE IS TRIGGED
 		var loadDiv = document.createElement("div");
@@ -205,14 +205,15 @@ function loadOlder() {
 // empty elements from #inner div, add loading class, load in elements from link #inner div, remove loading class when complete.
 function loadOldProjects() {
     $('#load-old-proj').load("old-proj.html" + ' .project-wrap', function() {
-  	$('#load-more').css('display', 'none');
+  		//hide the load more btn
+		$('#load-more').remove();
 	
-	$(".project-wrap").css("display", "none");	
-	//each project function
-	$(".project-wrap").each(function(){
+		$("#load-old-proj .project-wrap").css("display", "none");	
+		//each project function
+		$("#load-old-proj .project-wrap").each(function(){
 		//multiply the delay by the index number of each project (0,1,2,3..etc)
 		var index = $(this).index();
-		$(this).delay(300*index).fadeIn(300);
+		$(this).delay(200*index).fadeIn(300);
 	});
 	
   });

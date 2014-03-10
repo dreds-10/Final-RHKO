@@ -126,7 +126,7 @@ function loadJSON(){
 			
 			//More Info txt
 			var m = document.createElement("p");
-			m.innerHTML = "More info...";
+			m.innerHTML = jsonObj[key].proj_url;
 			projLink.appendChild(m);
 			
 			for(var t in jsonObj[key].tags){
